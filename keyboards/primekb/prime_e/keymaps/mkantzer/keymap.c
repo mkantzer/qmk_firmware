@@ -46,24 +46,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     LAYOUT(
-		KC_NO,      KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_6,   KC_7,       KC_8,       KC_9,       KC_0,       KC_BSPC, KC_DEL,
-        KC_NO,      LCTL(KC_LEFT),  LCTL(KC_DOWN),  LCTL(KC_UP),    LCTL(KC_RGHT),  KC_NO,          KC_NO,  KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,
-        KC_LSFT,    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,  KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO, KC_RSFT,
-        KC_LCTL,    KC_LGUI,                                        KC_LALT,        KC_NO,          KC_NO,  KC_LALT,                                        KC_LGUI, KC_TRNS
+		KC_NO,      LCTL(KC_1),     LCTL(KC_2),     LCTL(KC_3),     LCTL(KC_4),     LCTL(KC_5),     LCTL(KC_6), LCTL(KC_7), LCTL(KC_8), LCTL(KC_9), LCTL(KC_0), KC_BSPC, KC_DEL,
+        KC_NO,      LCTL(KC_LEFT),  LCTL(KC_DOWN),  LCTL(KC_UP),    LCTL(KC_RGHT),  KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,
+        KC_LSFT,    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO, KC_RSFT,
+        KC_LCTL,    KC_LGUI,                                        KC_LALT,        KC_NO,          KC_NO,      KC_LALT,                                        KC_LGUI, KC_TRNS
     ),
 
     LAYOUT(
-		KC_NO,      KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_6,   KC_7,       KC_8,       KC_9,       KC_0,       KC_BSPC, KC_DEL,
-        KC_NO,      LGUI(KC_LEFT),  LGUI(KC_DOWN),  LGUI(KC_UP),    LGUI(KC_RGHT),  KC_NO,          KC_NO,  KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,
-        KC_LSFT,    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,  KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO, KC_RSFT,
-        KC_LCTL,    KC_LGUI,                                        KC_LALT,        KC_NO,          KC_NO,  KC_LALT,                                        KC_TRNS, KC_LCTL
+		KC_NO,      LGUI(KC_1),     LGUI(KC_2),     LGUI(KC_3),     LGUI(KC_4),     LGUI(KC_5),     LGUI(KC_6), LGUI(KC_7), LGUI(KC_8), LGUI(KC_9), LGUI(KC_0), KC_BSPC, KC_DEL,
+        KC_NO,      LGUI(KC_LEFT),  LGUI(KC_DOWN),  LGUI(KC_UP),    LGUI(KC_RGHT),  KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,
+        KC_LSFT,    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO, KC_RSFT,
+        KC_LCTL,    KC_LGUI,                                        KC_LALT,        KC_NO,          KC_NO,      KC_LALT,                                        KC_TRNS, KC_LCTL
     ),
 
     LAYOUT(
-		KC_NO,      KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_6,   KC_7,       KC_8,       KC_9,       KC_0,       KC_BSPC, KC_DEL,
-        KC_NO,      LALT(KC_LEFT),  LALT(KC_DOWN),  LALT(KC_UP),    LALT(KC_RGHT),  KC_NO,          KC_NO,  KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,
-        KC_LSFT,    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,  KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO, KC_RSFT,
-        KC_LCTL,    KC_LGUI,                                        KC_LALT,        KC_NO,          KC_NO,  KC_TRNS,                                        KC_LGUI, KC_LCTL
+		KC_NO,      LALT(KC_1),     LALT(KC_2),     LALT(KC_3),     LALT(KC_4),     LALT(KC_5),     LALT(KC_6), LALT(KC_7), LALT(KC_8), LALT(KC_9), LALT(KC_0), KC_BSPC, KC_DEL,
+        KC_NO,      LALT(KC_LEFT),  LALT(KC_DOWN),  LALT(KC_UP),    LALT(KC_RGHT),  KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,
+        KC_LSFT,    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO, KC_RSFT,
+        KC_LCTL,    KC_LGUI,                                        KC_LALT,        KC_NO,          KC_NO,      KC_TRNS,                                        KC_LGUI, KC_LCTL
     ),
 
     LAYOUT(
