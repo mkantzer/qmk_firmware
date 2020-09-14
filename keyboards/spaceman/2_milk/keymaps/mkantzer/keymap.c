@@ -108,24 +108,55 @@ static tap uptap_state = {
 void up_finished(qk_tap_dance_state_t *state, void *user_data) {
     uptap_state.state = cur_dance(state);
     switch (uptap_state.state) {
-        case SINGLE_TAP: register_code(KC_AUDIO_VOL_UP); break;
-        case SINGLE_HOLD: register_code(SGUI(KC_A)); break;
-        case DOUBLE_TAP: register_code(KC_AUDIO_VOL_UP); break;
-        case DOUBLE_HOLD: register_code(HYPR(KC_A)); break;
+        case SINGLE_TAP:
+            register_code(KC_AUDIO_VOL_UP);
+            break;
+        case SINGLE_HOLD:
+            register_code(KC_LSHIFT);
+            register_code(KC_LGUI);
+            register_code(KC_A);
+            break;
+        case DOUBLE_TAP:
+            register_code(KC_AUDIO_VOL_UP);
+            break;
+        case DOUBLE_HOLD:
+            register_code(KC_LSHIFT);
+            register_code(KC_LCTRL);
+            register_code(KC_LALT);
+            register_code(KC_LGUI);
+            register_code(KC_A);
+            break;
         // Last case is for fast typing. Assuming your key is `f`:
         // For example, when typing the word `buffer`, and you want to make sure that you send `ff` and not `Esc`.
         // In order to type `ff` when typing fast, the next character will have to be hit within the `TAPPING_TERM`, which by default is 200ms.
-        case DOUBLE_SINGLE_TAP: tap_code(KC_AUDIO_VOL_UP); register_code(KC_AUDIO_VOL_UP);
+        case DOUBLE_SINGLE_TAP:
+            tap_code(KC_AUDIO_VOL_UP);
+            register_code(KC_AUDIO_VOL_UP);
     }
 }
 
 void up_reset(qk_tap_dance_state_t *state, void *user_data) {
     switch (uptap_state.state) {
-        case SINGLE_TAP: unregister_code(KC_AUDIO_VOL_UP); break;
-        case SINGLE_HOLD: unregister_code(SGUI(KC_A)); break;
-        case DOUBLE_TAP: unregister_code(KC_AUDIO_VOL_UP); break;
-        case DOUBLE_HOLD: unregister_code(HYPR(KC_A));
-        case DOUBLE_SINGLE_TAP: unregister_code(KC_AUDIO_VOL_UP);
+        case SINGLE_TAP:
+            unregister_code(KC_AUDIO_VOL_UP);
+            break;
+        case SINGLE_HOLD:
+            unregister_code(KC_LSHIFT);
+            unregister_code(KC_LGUI);
+            unregister_code(KC_A);
+            break;
+        case DOUBLE_TAP:
+            unregister_code(KC_AUDIO_VOL_UP);
+            break;
+        case DOUBLE_HOLD:
+            unregister_code(KC_LSHIFT);
+            unregister_code(KC_LCTRL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_LGUI);
+            unregister_code(KC_A);
+            break;
+        case DOUBLE_SINGLE_TAP:
+            unregister_code(KC_AUDIO_VOL_UP);
     }
     uptap_state.state = 0;
 }
@@ -142,24 +173,55 @@ static tap downtap_state = {
 void down_finished(qk_tap_dance_state_t *state, void *user_data) {
     downtap_state.state = cur_dance(state);
     switch (downtap_state.state) {
-        case SINGLE_TAP: register_code(KC_AUDIO_VOL_DOWN); break;
-        case SINGLE_HOLD: register_code(SGUI(KC_V)); break;
-        case DOUBLE_TAP: register_code(KC_AUDIO_VOL_DOWN); break;
-        case DOUBLE_HOLD: register_code(HYPR(KC_V)); break;
+        case SINGLE_TAP:
+            register_code(KC_AUDIO_VOL_DOWN);
+            break;
+        case SINGLE_HOLD:
+            register_code(KC_LSHIFT);
+            register_code(KC_LGUI);
+            register_code(KC_V);
+            break;
+        case DOUBLE_TAP:
+            register_code(KC_AUDIO_VOL_DOWN);
+            break;
+        case DOUBLE_HOLD:
+            register_code(KC_LSHIFT);
+            register_code(KC_LCTRL);
+            register_code(KC_LALT);
+            register_code(KC_LGUI);
+            register_code(KC_V);
+            break;
         // Last case is for fast typing. Assuming your key is `f`:
         // For example, when typing the word `buffer`, and you want to make sure that you send `ff` and not `Esc`.
         // In order to type `ff` when typing fast, the next character will have to be hit within the `TAPPING_TERM`, which by default is 200ms.
-        case DOUBLE_SINGLE_TAP: tap_code(KC_AUDIO_VOL_DOWN); register_code(KC_AUDIO_VOL_DOWN);
+        case DOUBLE_SINGLE_TAP:
+            tap_code(KC_AUDIO_VOL_DOWN);
+            register_code(KC_AUDIO_VOL_DOWN);
     }
 }
 
 void down_reset(qk_tap_dance_state_t *state, void *user_data) {
     switch (downtap_state.state) {
-        case SINGLE_TAP: unregister_code(KC_AUDIO_VOL_DOWN); break;
-        case SINGLE_HOLD: unregister_code(SGUI(KC_V)); break;
-        case DOUBLE_TAP: unregister_code(KC_AUDIO_VOL_DOWN); break;
-        case DOUBLE_HOLD: unregister_code(HYPR(KC_V));
-        case DOUBLE_SINGLE_TAP: unregister_code(KC_AUDIO_VOL_DOWN);
+        case SINGLE_TAP:
+            unregister_code(KC_AUDIO_VOL_DOWN);
+            break;
+        case SINGLE_HOLD:
+            unregister_code(KC_LSHIFT);
+            unregister_code(KC_LGUI);
+            unregister_code(KC_V);
+            break;
+        case DOUBLE_TAP:
+            unregister_code(KC_AUDIO_VOL_DOWN);
+            break;
+        case DOUBLE_HOLD:
+            unregister_code(KC_LSHIFT);
+            unregister_code(KC_LCTRL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_LGUI);
+            unregister_code(KC_V);
+            break;
+        case DOUBLE_SINGLE_TAP:
+            unregister_code(KC_AUDIO_VOL_DOWN);
     }
     downtap_state.state = 0;
 }
